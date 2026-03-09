@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollería Deliciosa - Venta de Pollos Frescos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Pollería Deliciosa</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>¡Pollos Frescos y Deliciosos!</h1>
+        <p>Descubre el mejor sabor en cada bocado. Pollos criados con cuidado y amor.</p>
+        <a href="#productos" class="btn">Ver Productos</a>
+    </section>
+
+    <section id="productos">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Nuestros Productos</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Pollos Enteros</h3>
+                <p>Pollos frescos y jugosos, perfectos para asar o cocinar.</p>
+                <p><strong>$15.99/kg</strong></p>
+            </div>
+            <div class="feature-card">
+                <h3>Pechugas de Pollo</h3>
+                <p>Pechugas tiernas y sin hueso, ideales para comidas rápidas.</p>
+                <p><strong>$18.99/kg</strong></p>
+            </div>
+            <div class="feature-card">
+                <h3>Alitas de Pollo</h3>
+                <p>Alitas crujientes y sabrosas, perfectas para fiestas.</p>
+                <p><strong>$12.99/kg</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Sobre Nosotros</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">En Pollería Deliciosa, nos dedicamos a proporcionar pollos de la más alta calidad. Nuestros pollos son criados en granjas libres de antibióticos y hormonas, asegurando un producto saludable y delicioso para ti y tu familia.</p>
+    </section>
+
+    <section id="contacto">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Contáctanos</h2>
+        <p style="text-align: center;">¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
+        <p style="text-align: center;">Teléfono: (123) 456-7890</p>
+        <p style="text-align: center;">Email: info@pollosdeliciosos.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pollería Deliciosa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            themeToggle.textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
